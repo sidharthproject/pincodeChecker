@@ -1,0 +1,112 @@
+body{
+ background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+ 
+}
+.clock{
+    height: 250px;
+ width: 250px;
+ border: 10px solid rgb(235, 235, 241);
+ border-radius: 50%;
+ margin: auto;
+ margin-top: 200px;
+ padding:15px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+
+}
+.clock-face{
+   
+    height: 100%;
+    width: 100%;
+  
+    position: relative;
+ 
+    transform: translateY(-3px)
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 51%;
+   
+    transform: rotate(90deg);
+    transition: all 0.5s;
+   transition-timing-function:cubic-bezier(0.1,2.7,0.58, 1) ;
+  }
+
+  .number {
+     
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    transform: translate(-50%, -40%);
+}
+
+.number1  { 
+    top: 7%; left: 78%;
+ }
+.number2  {
+     top: 25%; left: 94%
+     ; }
+.number3  { 
+    top: 51%; left: 100%;
+ }
+.number4  { 
+    top: 75%; left: 93%;
+ }
+.number5  {
+     top: 93%; left: 75%; 
+    
+    }
+.number6  {
+     top: 100%; left: 50%;
+     }
+.number7  {
+     top: 95%; left: 25%; 
+    }
+.number8  { 
+    top: 75%; left: 7%;
+ }
+.number9  {
+     top: 50%; left: 0%;
+     }
+.number10 {
+     top: 25%; left: 7%;
+     }
+.number11 {
+     top: 7%; left: 25%;
+     }
+.number12 { 
+    top: 0%; left: 50%;
+ }
+    
+ .hour-hand {
+    position: absolute;
+    left: 19%;
+    width: 30%; 
+    transform-origin: 100%;
+ transition: none;
+
+   
+}
+
+.min-hand {
+    width: 41%;
+    transform-origin: 100%;
+    position: absolute;
+    left: 8%;
+    transition: none;
+   
+}
+
+.sec-hand {
+    width: 48% ;
+    transform-origin: 100%;
+    position: absolute;
+    left: 1%;
+    transition: none;
+}
